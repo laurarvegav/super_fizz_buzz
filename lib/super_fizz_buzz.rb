@@ -1,22 +1,7 @@
 # Iteration 1
 # n = 1
 # while n < 1000 do
-#     if (n%3 == 0) && (n%5 == 0) && (n%7 == 0)
-#         p "SuperFizzBuzz"
-#     elsif (n%3 == 0) && (n%7 == 0)
-#         p "SuperFizz"
-#     elsif (n%5 == 0) && (n%7 == 0)
-#         p "FizzBuzz"
-#     elsif (n%3 == 0)
-#         p "Fizz"
-#     elsif (n%35 == 0)
-#         p "Buzz"
-#     elsif (n%7 == 0)
-#         p "Super"
-#     else 
-#         p n
-#     end
-#     n += 1
+    
 # end
 
 #Iteration 2
@@ -28,25 +13,44 @@ class SuperFizzBuzz
         @n = 1
     end
 
-    def output(n)
-        @n = n
-        if (@n%3 == 0) && (@n%5 == 0) && (@n%7 == 0)
+
+    def algorithm (n)
+        if (n%3 == 0) && (n%5 == 0) && (n%7 == 0)
             p "SuperFizzBuzz"
-        elsif (@n%3 == 0) && (@n%7 == 0)
+        elsif (n%3 == 0) && (n%7 == 0)
             p "SuperFizz"
-        elsif (@n%5 == 0) && (@n%7 == 0)
-            p "SuperBuzz"
-        elsif (@n%3 == 0) && (@n%5 == 0)
+        elsif (n%5 == 0) && (n%7 == 0)
             p "FizzBuzz"
-        elsif (@n%3 == 0)
+        elsif (n%3 == 0)
             p "Fizz"
-        elsif (@n%5 == 0)
+        elsif (n%35 == 0)
             p "Buzz"
-        elsif (@n%7 == 0)
+        elsif (n%7 == 0)
             p "Super"
         else 
-            p "#{@n}"
+            p n
         end
+        n += 1
+    end
+
+    def output(n)
+        @n = n
+        if (n%3 == 0) && (n%5 == 0) && (n%7 == 0)
+        p "SuperFizzBuzz"
+    elsif (n%3 == 0) && (n%7 == 0)
+        p "SuperFizz"
+    elsif (n%5 == 0) && (n%7 == 0)
+        p "FizzBuzz"
+    elsif (n%3 == 0)
+        p "Fizz"
+    elsif (n%35 == 0)
+        p "Buzz"
+    elsif (n%7 == 0)
+        p "Super"
+    else 
+        p n
+    end
+    n += 1
     end
 
     def output_range (num1 , num2)
